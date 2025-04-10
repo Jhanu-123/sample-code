@@ -19,7 +19,7 @@ import com.inventory.system.model.Product;
 import com.inventory.system.service.ProductService;
 
 @RestController
-@RequestMapping("/api/products")
+@RequestMapping("/api/products")// Maps HTTP POST requests to this method.
 public class ProductController {
 	@Autowired
 	private ProductService productService;
