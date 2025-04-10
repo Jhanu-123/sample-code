@@ -20,9 +20,9 @@ import com.inventory.system.service.ProductService;
 
 @RestController
 @RequestMapping("/api/products")// Maps HTTP POST requests to this method.
-public class ProductController {
+public class ProductController {// Defines a controller class to handle HTTP requests related to Product.
 	@Autowired
-	private ProductService productService;
+	private ProductService productService;// Declares a service that handles business logic for products.
 
 	@PostMapping
 	public ResponseEntity<Product> createProduct(@RequestBody Product product) {
